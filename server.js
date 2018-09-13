@@ -32,7 +32,7 @@ client.on('ready', () => {
 			})
 		}
 	client.channels.get("488047116284067841").edit({name: `Osób online: ${online.size-ytspeak.members.filter(m => m.user.bot).size}`});
-   	client.channels.get("488048173743603713").edit({name: `Liczba Członków: ${ytspeak.memberCount}`});
+   	client.channels.get("488048173743603713").edit({name: `Liczba Członków: ${ytspeak.memberCount - ytspeak.members.filter(m => m.user.bot).size}`});
    	client.channels.get("488047589367742465").edit({name: `Data: ${moment.utc(new Date()).format('DD.MM.YYYY')}`})
    	client.channels.get("488047837704224781").edit({name: `Godzina: ${hr}:${moment.utc(new Date()).format('mm:ss')}`})
    	client.channels.get("488047289450102804").edit({name:`Rekord Online: ${high}`})
