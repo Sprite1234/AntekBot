@@ -36,7 +36,7 @@ client.on('ready', () => {
    	client.channels.get("488047589367742465").edit({name: `Data: ${moment.utc(new Date()).format('DD.MM.YYYY')}`})
    	client.channels.get("488047837704224781").edit({name: `Godzina: ${hr}:${moment.utc(new Date()).format('mm:ss')}`})
    	client.channels.get("488047289450102804").edit({name:`Rekord Online: ${high}`})
-	client.channels.get("489834395700822018").edit({name:`Dostępne Kanały: ${ytspeak.channels.size}`})
+	
   },1000)
   console.log(`[client] Zalogowano jako ${client.user.tag}`);
 	})
